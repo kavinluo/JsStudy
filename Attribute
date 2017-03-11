@@ -1,4 +1,5 @@
 
+//getAttribute 总结 getAttribute 是获取属性值	
 	<p title="titles"></p>
 	<p title="titles"></p>
 	<p title="titles"></p>
@@ -29,3 +30,16 @@ var pAttribute = document.getElementsByTagName("p");
 	if (ifnull!=null) {
 		console.log(pAttribute[i].getAttribute("title"))
 		}
+
+
+
+//setAttribute  是修改属性值
+
+//HTML 
+<a href="" id="links" title="this is title value">hih</a>
+//js
+obj.setAttribute(attribut, value)
+var links = document.getElementById("links");
+links.setAttribute("title","这是a的title修改后的属性值");
+
+
