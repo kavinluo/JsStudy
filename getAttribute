@@ -1,0 +1,14 @@
+
+	<p title="titles"></p>
+	<p title="titles"></p>
+	<p title="titles"></p>
+	<p title="titles"></p>
+	<p title="titles"></p>
+	<p title="titles"></p>
+
+遍历所有P元素的title属性；
+var pAttribute = document.getElementsByTagName("p");
+	for (var i = 0; i < pAttribute.length; i++) {
+		console.log(pAttribute[i].getAttribute("title"))// 6 title
+    }
+  
