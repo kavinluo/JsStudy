@@ -11,4 +11,21 @@ var pAttribute = document.getElementsByTagName("p");
 	for (var i = 0; i < pAttribute.length; i++) {
 		console.log(pAttribute[i].getAttribute("title"))// 6 title
     }
-  
+ 
+ 
+ 
+ //下面包含空属性
+ 
+ 	<p title="titles"></p>
+	<p title="titles"></p>
+	<p title="titles"></p>
+	<p title="titles"></p>
+	<p></p>
+	<p title=""></p>
+ //对如果出现空属性的节点做判断
+ 	var pAttribute = document.getElementsByTagName("p");
+	for (var i = 0; i < pAttribute.length; i++) {
+	var ifnull = pAttribute[i].getAttribute("title");	
+	if (ifnull!=null) {
+		console.log(pAttribute[i].getAttribute("title"))
+		}
