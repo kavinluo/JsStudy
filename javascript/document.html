@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<div id="div">
+	<ul>
+		<li class="classbth"></li>
+		<li class="classbth"></li>
+		<li class="classbth"></li>
+		<li>progressive</li>
+		<li>enhancement</li>
+	</ul>
+</div>
+	<p title="titles"></p>
+	<p title="titles"></p>
+	<p title="titles"></p>
+	<p title="titles"></p>
+	<p></p>
+	<p title="">false
+
+	false</p>
+	<a id="links" href="https://www.baidu.com" onclick="alert('jhhj');return false">这是一个跳转到百度的链接</a>
+	
+
+<script>
+	// var pAttribute = document.getElementsByTagName("p");
+	// for (var i = 0; i < pAttribute.length; i++) {
+	// 	console.log(pAttribute[i].getAttribute("title"))
+	// }
+	// var pAttribute = document.getElementsByTagName("p");
+	// for (var i = 0; i < pAttribute.length; i++) {
+	// var ifnull = pAttribute[i].getAttribute("title");	
+	// if (ifnull!=null) {
+	// 	console.log(pAttribute[i].getAttribute("title"))
+	// 	}
+	
+
+//obj.setAttribute(attribut, value)
+
+var links = document.getElementById("links");
+links.setAttribute("title","这是a的title修改后的属性值")
+</script>
+
+	<script>
+		//var div = document.getElementById("div");
+		//console.log(typeof div);
+		function getElementByClassName(node,classname){
+			if(node.getElementByClassName){
+				return node.getElementByClassName(classname);
+			}else {
+				var resulte = new Array();
+				var elems = node.getElementByClassName("*");
+				for (var i = 0; i <elems.length; i++) {
+					if (elems[i].classname.indexOf(classname) != -1) {
+						resulte[results.length] = elems[i];
+					}
+				}
+				return resulte;
+			}
+		}
+		//console.log(getElementByClassName("div","classbth");
+	</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>属性切换</title>
+</head>
+<body>
+
+	<ul>
+	<li><a href="img/1.jpg"  title="这是1" onclick="showpic(this);return false">第一张</a></li>
+	<li><a href="img/2.jpg" title="这是2" onclick="showpic(this);return false">第二张</a></li>
+	<li><a href="img/3.jpg" title="这是3" onclick="showpic(this);return false">第三张</a></li>
+	<li><a href="img/4.jpg" title="这是4" onclick="showpic(this);return false">第四张</a></li>
+	<li><a href="img/5.jpg" title="这是5" onclick="showpic(this);return false">第五张</a></li>
+	</ul>
+	<div><img id="img" src="img/5.jpg" alt="" width="200"></div>
+	<div id="description">这是描述的</div>
+<script>
+	//window.onload=bodynode;
+	//window.onload=bodynode("");
+</script>
+	<script>
+	// function bodynode(){
+
+	// 	var bodydocument = document.getElementsByTagName("body")[0];
+	// 	if (bodydocument.childNodes.nodeType == 1) {
+	// 		console.log(bodydocument.length);
+	// 	}
+	// }
+	function showpic(whichpic){
+		var source = whichpic.getAttribute("href");
+		var pl = document.getElementById("img");
+		pl.setAttribute("src", source);
+		var text = whichpic.getAttribute("title");
+		var description = document.getElementById("description");
+		console.log(description.childNodes[0].nodeValue=text)
+		//console.log(description.childNodes[0].nodeValue)
+	}
+	</script>
+</body>
+</html>
