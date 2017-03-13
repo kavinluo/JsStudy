@@ -1,0 +1,24 @@
+<a href="https://www.baidu.com" class="popup">百度</a>
+<a href="https://www.baidu.com" class="popup">百度</a>
+<a href="https://www.baidu.com">百度</a>
+<a href="https://www.baidu.com">百度</a>
+<script>
+
+function prens(){
+	var links = document.getElementsByTagName("a")
+	for (var i = 0; i < links.length; i++) {
+		if(links[i].getAttribute("class") =="popup"){
+			links[i].onclick = function(){
+				console.log("hhhh");
+				popup(this.getAttribute("href"));
+				return false;
+			}
+		}
+	}
+}
+function popup(winurl){
+	window.open(winurl, "popup","width=400,height=400");
+}
+
+window.onload = prens;
+</script>
