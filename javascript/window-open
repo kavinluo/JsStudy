@@ -1,7 +1,7 @@
-<a href="https://www.baidu.com" class="popup">百度</a>
-<a href="https://www.baidu.com" class="popup">百度</a>
-<a href="https://www.baidu.com">百度</a>
-<a href="https://www.baidu.com">百度</a>
+<a href="https://www.google.com" class="popup">百度</a>
+<a href="https://www.google.com" class="popup">百度</a>
+<a href="https://www.google.com" class="popup">百度</a>
+<a href="https://www.google.com" class="popup">百度</a>
 <script>
 
 function prens(){
