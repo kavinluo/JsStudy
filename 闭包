@@ -31,3 +31,32 @@ function test(){
     myarr[0]();// 输出的是函数体  fn(){console.log(i);}
     myarr[1](); //输出 10 ;
      myarr[2]();//同样输出 10
+
+		 for (var j = 0; j < 10; j++) {
+		 	myarr[j] // 10 个 10
+		 }
+		 
+		 
+// 通过立即执行函数解决 应该是 按顺序 输出的10个数
+
+	function test(){
+			var  arr = [];
+			for (var i = 0; i < 10; i++) {
+				(function(j){
+					arr[j] = function(){
+					console.log(j + " ");
+				}
+			}(i));
+				
+			}
+			return arr;
+		}
+
+		var myarr = test();
+		console.log(myarr);
+		for (var j = 0; j < 10; j ++) {
+			console.log(myarr[j]());
+		}
+
+
+
