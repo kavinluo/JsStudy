@@ -1,0 +1,33 @@
+		function add(){
+			 count = 0;
+			function deom(){
+				count ++;
+				console.log(count);
+			}
+			return deom;
+		}
+    
+    var counter = add();
+		console.log(counter);// 输出的是 fn.deom(){} 函数体
+		counter();// 1  调用一次+1
+		counter();//2   累加+1
+		counter();//3   累加+1
+    
+    
+    
+    
+function test(){
+			var arr = [];
+			for (var i = 0; i < 10; i++) {
+				arr[i] = function(){
+					console.log(i);
+				}
+			}
+			return arr;
+		}
+
+ var myarr = test();
+ 
+    myarr[0]();// 输出的是函数体  fn(){console.log(i);}
+    myarr[1](); //输出 10 ;
+     myarr[2]();//同样输出 10
