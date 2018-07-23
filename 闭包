@@ -1,4 +1,7 @@
-		function add(){
+/*
+*两个或者两个函数以上相互嵌套，把里面的函数保存到外面的函数的外头（把里面的函数保存到外头）；
+*/
+function add(){
 			 count = 0;
 			function deom(){
 				count ++;
