@@ -1,4 +1,5 @@
 
+//模仿jQ连续调用；
 var doit ={
   smoking : function(){
     console.log("smoking .....");
@@ -13,4 +14,14 @@ var doit ={
    return this;
   }
 }
-doit.smoking().drink().run()
+doit.smoking().drink().run();
+
+
+
+// 属性的隐式调用
+
+var obj = {
+ name = "xi"
+}
+obj.name // xi
+obj['name'] //必须是字符串，加载速度快
