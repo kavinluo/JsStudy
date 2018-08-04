@@ -1,0 +1,16 @@
+
+var doit ={
+  smoking : function(){
+    console.log("smoking .....");
+    return this;
+  },
+  drink : function(){
+    console.log("drinking......");
+    return this;
+  },
+  run : function(){
+   console.log("Runing.....");
+   return this;
+  }
+}
+doit.smoking().drink().run()
