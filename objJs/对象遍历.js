@@ -10,6 +10,6 @@ var obj ={
 for(var prop in obj){
  // console.log(obj.prop ----> obj['prop'])
  
- console.log(obj.[prop]) //必须是方括号
+ console.log(obj[prop]) //必须是方括号
 
 }
