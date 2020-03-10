@@ -18,3 +18,16 @@ function convert(temp){
 var temp_fahrenheit = 95;
 var temp_celsius = convert(temp_fahrenheit);
 console.log(temp_celsius)// 35; 这个值由convert返回，因为temp_fahrenheit赋予的值是95，result = 95 -32;result = 63/1.8;所以最后的结果是35
+
+
+function makeCounter() {
+  let count = 0;
+  return function () {
+    return count++;
+  }
+}
+
+let counter = makeCounter() //[function]
+
+console.log(counter()) // 0
+console.log(counter()) // 1

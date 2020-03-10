@@ -50,7 +50,6 @@ function test(){
 					console.log(j + " ");
 				}
 			}(i));
-				
 			}
 			return arr;
 		}
@@ -61,5 +60,21 @@ function test(){
 			console.log(myarr[j]());
 		}
 
+    function sum(a){
+      return function (b){
+        return a + b
+      }
+    }
+    console.log(sum(5)(-1))
 
+
+function inBetween(a, b) {
+  return function(x) {
+    console.log('x',x)
+    return x >= a && x <= b;
+  };
+}
+
+let arr = [1, 2, 3, 4, 5, 6, 7];
+console.log( arr.filter(inBetween(3, 6)) ); // 3,4,5,6
 

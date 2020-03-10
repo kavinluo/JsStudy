@@ -47,3 +47,21 @@ var arr =[11,1,1,222,33,5,5,5,6,7];
 			}
 
 		}
+
+
+    // ## sort 
+    let user = [
+      {name: 'John', age: 20, surnane: 'Jonnson'},
+      {name: 'Pete', age: 22, surnane: 'Peterson'},
+      {name: 'Ann', age: 19, surnane: 'Annson'},
+      {name: 'kevin', age: 21, surnane: 'Kevinson'}
+    ]
+
+    function byField(field) {
+      return (a, b) => a[field] > b[field] ? 1 : -1
+    }
+
+    user.sort(byField('name'))
+    //user.forEach(item => console.log(item))
+    user.sort(byField('age'))
+    user.forEach(item => console.log(item))
