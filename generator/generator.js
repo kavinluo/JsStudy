@@ -11,9 +11,9 @@ function* generators(){
   return 4
 }
 // 当执行generator函数时，不是直接返回函数体的代码，而是返回一个特殊的对象 
-console.log(generators())
+console.log('888',generators())
 let gener = generators()
-console.log(gener)
+console.log('---',gener)
 //gener.next()
 console.log(gener.next()) //{value: 1, done: false}
 console.log(gener.next()) //{value: 2, done: false}
