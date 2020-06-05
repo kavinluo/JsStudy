@@ -1,7 +1,7 @@
 /*
  * @Author: kevin
  * @Date: 2020-06-05 11:05:08
- * @LastEditTime: 2020-06-05 11:30:04
+ * @LastEditTime: 2020-06-05 14:09:57
  * @Description: 
  */ 
 
@@ -34,4 +34,5 @@ let person = (function(){
   }
   return Person
 }())
-console.log(person('kevin'))
+let or = new person('kevin')
+console.log(or.getName())
