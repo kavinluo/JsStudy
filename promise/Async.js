@@ -24,7 +24,6 @@ function res() {
 console.log(res())
 
 
-
 async function f() {
   let tes = 'hello '
   let promise = new Promise((res, rej)=> {
